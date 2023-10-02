@@ -28,12 +28,23 @@ subtitle.style.fontWeight =  'bold';
 
 
 // GET ELEMENT BY CLASS NAME
-var items = document.getElementsByClassName('list-group-item');
+// var items = document.getElementsByClassName('list-group-item');
 // console.log(items);
 // console.log(items[2]);
-items[2].style.backgroundColor = 'green';
-items[1].style.fontWeight = 'bold';
-items[2].style.fontWeight = 'bold';
-items[3].style.fontWeight = 'bold';
-items[0].style.fontWeight = 'bold';
+// items[2].style.backgroundColor = 'green';
+// items[1].style.fontWeight = 'bold';
+// items[2].style.fontWeight = 'bold';
+// items[3].style.fontWeight = 'bold';
+// items[0].style.fontWeight = 'bold';
 
+//GET ELEMENT BY TAG NAME
+var li = document.getElementsByTagName('li');
+ console.log(li);
+ console.log(li[1]);
+ li[1].textContent = 'hello 2';
+ li[1].style.fontWeight = 'bold';
+ li[1].style.background = 'yellow';
+
+ for(var i= 0;i<li.length; i++){
+    li[i].style.background = 'yellow';
+ }
